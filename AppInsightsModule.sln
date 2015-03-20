@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{A0786B88-2ADB-4C21-ABE8-AA2D79766269}") = "AppInsightsModule", "AppInsightsModule\AppInsightsModule.phpproj", "{EDD432DF-2BC4-4A3A-AD4D-8C5490E6F291}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://52.11.38.52:8080/tfs/appinsight_php
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = AppInsightsModule\\AppInsightsModule.phpproj
+		SccProjectName1 = AppInsightsModule
+		SccLocalPath1 = AppInsightsModule
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDD432DF-2BC4-4A3A-AD4D-8C5490E6F291}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDD432DF-2BC4-4A3A-AD4D-8C5490E6F291}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDD432DF-2BC4-4A3A-AD4D-8C5490E6F291}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDD432DF-2BC4-4A3A-AD4D-8C5490E6F291}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

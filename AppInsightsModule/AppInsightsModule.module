@@ -1,0 +1,39 @@
+<?php
+
+namespace ApplicationInsights\Drupal;
+require_once 'vendor/autoload.php';
+
+//Creates a link on the configurations menu to set the instrumentation key
+function AppInsightsModule_menu() {
+    $items = array();
+  
+    $items['admin/config/system/appinsights'] = array(
+        'title' => 'Application Insights',
+        'description' => 'Set an Application Insights instrumentation key',
+        'page callback' => 'drupal_get_form',
+        'page arguments' => array('AppInsightsModule_settings'),
+        'access arguments' => array('administer settings'),
+        'type' => MENU_NORMAL_ITEM,
+    );
+   
+    return $items;
+}
+
+
+function AppInsightsModule_settings() {
+    $form = array();
+
+    $form['instrumentation_key'] = array(
+        '#type' => 'textfield',
+        '#title' => t('Instrumentation key'),
+        '#default_value' => variable_get('instrumentation_key', ''),
+        '#size' => 30,
+        '#maxlength' => 36,
+        '#required' => TRUE,
+    );
+
+    return system_settings_form($form);
+}
+
+$serverInstrumentation = new Server_Instrumentation(variable_get('instrumentation_key', ''));
+register_shutdown_function(array($serverInstrumentation,'endRequest'));

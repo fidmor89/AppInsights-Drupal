@@ -1,0 +1,4 @@
+core = "7.x"
+name = "Application Insights"
+description = "Integrates a Drupal site with Microsoft Application Insights"
+configure = admin/config/system/appinsights
